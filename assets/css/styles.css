@@ -44,7 +44,7 @@ body {
   margin-right: 13%;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 600.98px) {
   #carousel-click,
   .welcome-contents {
     visibility: hidden;
