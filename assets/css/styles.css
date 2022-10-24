@@ -43,6 +43,7 @@ body {
   margin-left: 13%;
   margin-right: 13%;
 }
+
 @media (max-width: 575.98px) {
   #carousel-click,
   .welcome-contents {
@@ -50,13 +51,8 @@ body {
   }
   .section-body {
     margin-left: 13%;
-  margin-right: 13%;
+    margin-right: 13%;
   }
-  #logo-id{
-    vertical-align: middle;
-  }
-  .logo {
-  margin-top: 10px;
 }
   .welcome {
     top: 4.5%;
@@ -89,6 +85,8 @@ body {
     text-align: center;
   }
 }
+
+
 @media (max-width: 991.98px) { 
   #carousel-click{
     visibility: hidden;
@@ -105,4 +103,4 @@ body {
     color: white;
     text-align: center;
   }
- }
+}
