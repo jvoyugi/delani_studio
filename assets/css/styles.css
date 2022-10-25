@@ -6,6 +6,21 @@ body {
   text-align: center;
   color: white;
 }
+#services {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#what-we-do{
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.portfolio-row{
+  width:75%;
+  margin: 0 auto;
+}
 .logo {
   margin-top: -30px;
   margin-bottom: -20px;
@@ -32,11 +47,6 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#services {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 .services-contents {
   position: absolute;
   top: 50%;
@@ -52,8 +62,8 @@ body {
   font-size: 24px;
 }
 .section-body {
-  margin-left: 13%;
-  margin-right: 13%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 @media (max-width: 575.98px) {
