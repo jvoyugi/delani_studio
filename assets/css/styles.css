@@ -13,6 +13,7 @@ body {
   text-align: center;
   color: white;
   flex-flow: column wrap;
+  overflow: hidden;
 }
 #what-we-do{
   position: relative;
@@ -31,7 +32,7 @@ body {
 }
 #contact-form-wrapper{
   overflow-y: auto;
-  height: 250px;
+  height: 300px;
 }
 .contact-contents {
   position: absolute;
