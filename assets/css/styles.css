@@ -13,7 +13,6 @@ body {
   text-align: center;
   color: white;
   flex-flow: column wrap;
-  overflow: hidden;
 }
 #what-we-do{
   position: relative;
@@ -29,6 +28,10 @@ body {
   color: white;
   flex-flow: column wrap;
   overflow: hidden;
+}
+#contact-form-wrapper{
+  overflow-y: auto;
+  height: 250px;
 }
 .contact-contents {
   position: absolute;
@@ -75,6 +78,8 @@ body {
 .services-body {
   margin-left: -90px;
   margin-right: -90px;
+  overflow-y: scroll;
+  height: 200px;
 }
 .section-title {
   text-transform: uppercase;

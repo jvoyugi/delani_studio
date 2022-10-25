@@ -137,30 +137,32 @@
       <div class="text-uppercase section-title text-center">
         Contact Us
       </div>
-      <form class="row needs-validation w-75 mx-auto py-4" id="contact-form" novalidate>
-        <div class="row">
-          <div class="col-md p-2">
-            <input type="text" class="form-control bg-transparent w-100 text-light rounded-0" id="name" placeholder="Name..." required>
-            <div class="valid-feedback">
-              Looks good!
+      <div class="overflow-auto" id="contact-form-wrapper">
+        <form class="row needs-validation w-75 mx-auto py-4" id="contact-form" novalidate>
+          <div class="row">
+            <div class="col-md p-2">
+              <input type="text" class="form-control bg-transparent w-100 text-light rounded-0" id="name" value="Name..." required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md p-2">
+              <input type="email" class="form-control text-light bg-transparent rounded-0" id="email" value="Email..." required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
           </div>
-          <div class="col-md p-2">
-            <input type="email" class="form-control bg-transparent rounded-0" id="email" placeholder="Email..." required>
-            <div class="valid-feedback">
-              Looks good!
+          <div class="row py-4">
+            <div class="col-md">
+              <textarea class="form-control bg-transparent text-light rounded-0" rows="5" id="message" required>Your message here...</textarea>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row py-4">
-          <div class="col-md">
-            <textarea class="form-control bg-transparent w-100 text-light rounded-0" rows="5" id="message" placeholder="Your message here..." required></textarea>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
   <footer>
