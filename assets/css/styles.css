@@ -5,17 +5,36 @@ body {
   position: relative;
   text-align: center;
   color: white;
+  flex-flow: column wrap;
+  overflow: hidden;
 }
 #services {
   position: relative;
   text-align: center;
   color: white;
+  flex-flow: column wrap;
+  overflow: hidden;
 }
 #what-we-do{
   position: relative;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 20px;
+  flex-flow: column wrap;
+  overflow: hidden;
+}
+#contact{
+  position: relative;
+  color: white;
+  flex-flow: column wrap;
+  overflow: hidden;
+}
+.contact-contents {
+  position: absolute;
+  top: 0px;
+  margin-top: 50px;
+  width: 100%;
 }
 .portfolio-row{
   width:75%;
@@ -65,7 +84,18 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
+::placeholder {
+  color: white;
+  opacity: 1; 
+}
 
+:-ms-input-placeholder { 
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
 @media (max-width: 575.98px) {
   #carousel-click,
   .welcome-contents {

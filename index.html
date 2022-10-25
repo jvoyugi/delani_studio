@@ -133,7 +133,35 @@
   </div>
   <div id="contact">
     <img src="assets/images/backgrounds/c_image.jpg" class="img-fluid" alt="contact-image">
-
+    <div class="contact-contents">
+      <div class="text-uppercase section-title text-center">
+        Contact Us
+      </div>
+      <form class="row needs-validation w-75 mx-auto py-4" id="contact-form" novalidate>
+        <div class="row">
+          <div class="col-md p-2">
+            <input type="text" class="form-control bg-transparent w-100 text-light rounded-0" id="name" placeholder="Name..." required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md p-2">
+            <input type="email" class="form-control bg-transparent rounded-0" id="email" placeholder="Email..." required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-md">
+            <textarea class="form-control bg-transparent w-100 text-light rounded-0" rows="10" id="message" placeholder="Your message here..." required></textarea>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
   <footer>
     <!-- place footer here -->
