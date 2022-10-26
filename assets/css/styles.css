@@ -15,7 +15,7 @@ body {
   flex-flow: column wrap;
   overflow: hidden;
 }
-#what-we-do{
+#what-we-do {
   position: relative;
   text-align: center;
   margin-top: 20px;
@@ -24,15 +24,18 @@ body {
   flex-flow: column wrap;
   overflow: hidden;
 }
-#contact{
+#contact {
   position: relative;
   color: white;
   flex-flow: column wrap;
   overflow: hidden;
 }
-#contact-form-wrapper{
+#contact-form-wrapper {
   overflow-y: auto;
   height: 300px;
+}
+#design-icon{
+  display: inline-block;
 }
 .contact-contents {
   position: absolute;
@@ -40,8 +43,8 @@ body {
   margin-top: 50px;
   width: 100%;
 }
-.portfolio-row{
-  width:75%;
+.portfolio-row {
+  width: 75%;
   margin: 0 auto;
 }
 .logo {
@@ -90,16 +93,17 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
-::placeholder {
+
+.form-control::placeholder {
   color: white;
-  opacity: 1; 
+  opacity: 1;
 }
 
-:-ms-input-placeholder { 
+.form-control:-ms-input-placeholder {
   color: white;
 }
 
-::-ms-input-placeholder {
+.form-control::-ms-input-placeholder {
   color: white;
 }
 @media (max-width: 575.98px) {
@@ -108,7 +112,7 @@ body {
     visibility: hidden;
   }
   .logo {
-    margin-top:180px;
+    margin-top: 180px;
   }
 }
 
@@ -128,13 +132,12 @@ body {
 }
 
 @media (max-width: 797.98px) {
-  .services-body{
+  .services-body {
     margin-left: -150px;
     margin-right: -150px;
     font-size: 12px;
   }
 }
-
 
 @media (max-width: 991.98px) {
   #carousel-click {

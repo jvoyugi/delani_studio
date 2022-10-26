@@ -83,9 +83,14 @@
     </div>
     <div class="row">
       <div class="col-sm p-4">
-        <img src="assets/images/services_icons/design_icon.png" alt="design-icon">
-        <div class="text-uppercase p-2">Design</div>
-        <div class="design-description d-none">
+        <div id="design-icon">
+          <img src="assets/images/services_icons/design_icon.png" alt="Design icon">
+          <div class="text-uppercase p-2">Design</div>
+        </div>
+        <div class="design-description" id="design-description">
+          <div class="text-center fw-bold my-2">
+            Design
+          </div>
           Our design practice offers a full range of services including brand strategy, interaction and visual design
           and user experience testing.
           <br />
@@ -94,9 +99,14 @@
         </div>
       </div>
       <div class="col-sm p-4">
-        <img src="assets/images/services_icons/dev_icon.png" alt="dev-icon">
-        <div class="text-uppercase p-2">Development</div>
-        <div class="development-description d-none">
+        <div id="dev-icon">
+          <img src="assets/images/services_icons/dev_icon.png" alt="Dev icon">
+          <div class="text-uppercase p-2">Development</div>
+        </div>
+        <div class="development-description" id="dev-description">
+          <div class="text-center fw-bold my-2">
+            Development
+          </div>
           All engineers are fluent in the latest enterprise, mobile and web development technologies.
           <br />
           They collaborate with your team to write, and improve code on a daily basis, using proven practices such as
@@ -104,9 +114,14 @@
         </div>
       </div>
       <div class="col-sm p-4">
-        <img src="assets/images/services_icons/product_icon.png" alt="product-icon">
-        <div class="text-uppercase p-2">Product management</div>
-        <div class="product-management-description d-none">
+        <div id="product-icon">
+          <img src="assets/images/services_icons/product_icon.png" alt="Product icon">
+          <div class="text-uppercase p-2">Product management</div>
+        </div>
+        <div class="product-management-description" id="product-description">
+          <div class="text-center fw-bold my-2">
+            Product Management
+          </div>
           Planning and development is iterative. Because we are constantly coding and testing, the products we build are
           always ready to go live.
           <br />
@@ -159,25 +174,25 @@
       <div class="overflow-auto" id="contact-form-wrapper">
         <form class="row needs-validation w-75 mx-auto py-4" id="contact-form" novalidate>
           <div class="row">
-            <div class="col-md p-2">
+            <div class="col-sm p-2">
               <input type="text" class="form-control bg-transparent w-100 text-light rounded-0" id="name"
-                value="Name..." required>
+                placeholder="Name..." required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-            <div class="col-md p-2">
-              <input type="email" class="form-control text-light bg-transparent rounded-0" id="email" value="Email..."
-                required>
+            <div class="col-sm p-2">
+              <input type="email" class="form-control text-light bg-transparent rounded-0" id="email"
+                placeholder="Email..." required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
           </div>
           <div class="row py-4">
-            <div class="col-md">
+            <div class="col-sm">
               <textarea class="form-control bg-transparent text-light rounded-0" rows="5" id="message"
-                required>Your message here...</textarea>
+                placeholder="Your message here..." required></textarea>
               <div class="valid-feedback">
                 Looks good!
               </div>
