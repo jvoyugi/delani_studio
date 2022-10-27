@@ -32,10 +32,7 @@ body {
 }
 #contact-form-wrapper {
   overflow-y: auto;
-  height: 300px;
-}
-#design-icon{
-  display: inline-block;
+  height: 500px;
 }
 .contact-contents {
   position: absolute;
