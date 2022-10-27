@@ -1,7 +1,20 @@
 $(document).ready(() => {
-
   $(".icon-description").hide();
+  toggleVisibility();
+  $("form").submit(event => {
+    event.preventDefault();
+    event.stopPropagation();
+    const form = event.currentTarget;
+    const isValid = form.checkValidity();
+    if (isValid){
+      form.reset();
+    }else{
+      form.classList.add('was-validated');
+    }
+  })
+})
 
+const toggleVisibility = () => {
   $("#design-icon").click(event => {
     $(event.currentTarget).toggle();
     $("#design-description").toggle();
@@ -27,4 +40,4 @@ $(document).ready(() => {
     $(event.currentTarget).toggle();
     $("#product-icon").toggle();
   });
-})
+};
