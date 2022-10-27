@@ -136,31 +136,71 @@
     </div>
     <div class="w-100 my-4">
       <div class="row portfolio-row">
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 text-white portfolio-icon" id="work4">
           <img src="assets/images/portfolio/work4.jpg" class="img-fluid" alt="work4" />
+          <div class="portfolio-text">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Brown<br />PLC.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work3">
           <img src="assets/images/portfolio/work3.jpg" class="img-fluid" alt="work3">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Mighty <br /> Ontario <br /> Security</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work2">
           <img src="assets/images/portfolio/work2.jpg" class="img-fluid" alt="work2">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Benevolent <br /> Corporation</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work1">
           <img src="assets/images/portfolio/work1.jpg" class="img-fluid" alt="work1">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Jim <br /> Carrey</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row portfolio-row">
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work5">
           <img src="assets/images/portfolio/work5.jpg" class="img-fluid" alt="work5">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Elena <br /> Welness</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work6">
           <img src="assets/images/portfolio/work6.jpg" class="img-fluid" alt="work6">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Buttons <br /> INC.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work7">
           <img src="assets/images/portfolio/work7.jpg" class="img-fluid" alt="work7">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Burned <br /> PLC</p>
+            </div>
+          </div>
         </div>
-        <div class="col-sm p-2 ">
+        <div class="col-sm p-2 portfolio-icon" id="work8">
           <img src="assets/images/portfolio/work8.jpg" class="img-fluid" alt="work8">
+          <div class="portfolio-text text-white">
+            <div class="portfolio-text-wrapper">
+              <p class="text-uppercase">Giraffe <br /> Restaurant</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -172,21 +212,20 @@
         Contact Us
       </div>
       <div id="success-alert" class="text-center fw-bold">
-        Message has been sent successfully.
       </div>
       <div class="overflow-auto" id="contact-form-wrapper">
         <form class="row needs-validation w-75 mx-auto py-4" id="contact-form" novalidate>
           <div class="row">
             <div class="col-sm p-2">
               <input type="text" class="form-control bg-transparent w-100 text-light rounded-0" id="name"
-                placeholder="Name..." required>
+                placeholder="Name..." name="name" required>
               <div class="invalid-feedback">
                 This field is required.
               </div>
             </div>
             <div class="col-sm p-2">
               <input type="email" class="form-control text-light bg-transparent rounded-0" id="email"
-                placeholder="Email..." required>
+                placeholder="Email..." name="email" required>
               <div class="invalid-feedback">
                 This field is required.
               </div>
@@ -195,7 +234,7 @@
           <div class="row py-4">
             <div class="col-sm">
               <textarea class="form-control bg-transparent text-light rounded-0" rows="5" id="message"
-                placeholder="Your message here..." required></textarea>
+                placeholder="Your message here..." name="message" required></textarea>
               <div class="invalid-feedback">
                 This field is required.
               </div>

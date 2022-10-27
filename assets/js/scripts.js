@@ -1,14 +1,19 @@
 $(document).ready(() => {
   $(".icon-description").hide();
+  $(".portfolio-text").hide();
   $("#success-alert").hide();
 
   toggleVisibility();
+  toggleTextOnHover();
   $("form").submit(event => {
     event.preventDefault();
     event.stopPropagation();
     const form = event.currentTarget;
     const isValid = form.checkValidity();
     if (isValid) {
+      const formData = new FormData(form);
+      console.log(formData.keys().next());
+      $("#success-alert").html(`Hello ${formData.get("name")}, we have successfully received your message. We'll get in touch shortly.`)
       $("#success-alert").show();
       form.reset();
     } else {
@@ -44,3 +49,14 @@ const toggleVisibility = () => {
     $("#product-icon").toggle();
   });
 };
+
+const toggleTextOnHover = () => {
+  $("#work4").hover(() => $("#work4 .portfolio-text").show(), () => $("#work4 .portfolio-text").hide())
+  $("#work3").hover(() => $("#work3 .portfolio-text").show(), () => $("#work3 .portfolio-text").hide())
+  $("#work2").hover(() => $("#work2 .portfolio-text").show(), () => $("#work2 .portfolio-text").hide())
+  $("#work1").hover(() => $("#work1 .portfolio-text").show(), () => $("#work1 .portfolio-text").hide())
+  $("#work5").hover(() => $("#work5 .portfolio-text").show(), () => $("#work5 .portfolio-text").hide())
+  $("#work6").hover(() => $("#work6 .portfolio-text").show(), () => $("#work6 .portfolio-text").hide())
+  $("#work7").hover(() => $("#work7 .portfolio-text").show(), () => $("#work7 .portfolio-text").hide())
+  $("#work8").hover(() => $("#work8 .portfolio-text").show(), () => $("#work8 .portfolio-text").hide())
+}
