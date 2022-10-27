@@ -1,19 +1,22 @@
 $(document).ready(() => {
   $(".icon-description").hide();
+  $("#success-alert").hide();
+
   toggleVisibility();
   $("form").submit(event => {
     event.preventDefault();
     event.stopPropagation();
     const form = event.currentTarget;
     const isValid = form.checkValidity();
-    if (isValid){
+    if (isValid) {
+      $("#success-alert").show();
       form.reset();
-    }else{
+    } else {
       form.classList.add('was-validated');
+      $("#success-alert").hide();
     }
   })
 })
-
 const toggleVisibility = () => {
   $("#design-icon").click(event => {
     $(event.currentTarget).toggle();
