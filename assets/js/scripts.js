@@ -5,23 +5,26 @@ $(document).ready(() => {
 
   toggleVisibility();
   toggleTextOnHover();
-  $("form").submit(event => {
-    event.preventDefault();
-    event.stopPropagation();
-    const form = event.currentTarget;
-    const isValid = form.checkValidity();
-    form.classList.add('was-validated');
-    if (isValid) {
-      const formData = new FormData(form);
-      $("#success-alert").html(`Hello ${formData.get("name")}, we have successfully received your message. We'll get in touch shortly.`)
-      $("#success-alert").show();
-      form.reset();
-      form.classList.remove('was-validated');
-    } else {
-      $("#success-alert").hide();
-    }
-  })
+  $("form").submit(event => handleFormSubmit(event));
 })
+
+const handleFormSubmit = event => {
+  event.preventDefault();
+  event.stopPropagation();
+  const form = event.currentTarget;
+  const isValid = form.checkValidity();
+  form.classList.add('was-validated');
+  if (isValid) {
+    const formData = new FormData(form);
+    $("#success-alert").html(`Hello ${formData.get("name")}, we have successfully received your message. We'll get in touch shortly.`);
+    $("#success-alert").show();
+    form.reset();
+    form.classList.remove('was-validated');
+  } else {
+    $("#success-alert").hide();
+  }
+}
+
 const toggleVisibility = () => {
   $("#design-icon").click(event => {
     $(event.currentTarget).toggle();
